@@ -1,0 +1,28 @@
+# Projeto Crompt
+
+## Metodologia da aplicação
+
+Usuário:
+- Pegar cupom fiscal e tirar uma foto do qr code
+- Salvar foto em uam pasta específica do google drive
+
+Aplicação:
+- Login:
+	- Liberar acesso do crompt google drive API para as pastas
+	- Escolher pasta onde guarda os comprovantes
+
+
+Fluxo da aplicação no backend:
+	- Acessar pasta do google drive
+		- Para cada imagem:
+		- Pegar a imagem e salvar localmente com o pillow
+		- Ler código QR
+		- Acessar link do códgio QR
+		- Fazer scraping do xml
+		- Tratar e organizar os dados
+		- Enviar JSON
+		- 
+Fluxo da aplicação no frontend:
+	- Tratar JSON com dados
+	- Montar gráfico dinâmico
+	- Exibir ao usuário
